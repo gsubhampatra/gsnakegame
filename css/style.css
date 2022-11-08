@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+     background: url('../img/bg.jpg'); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#scoreBox{
+    position: absolute;
+    top: 20px;
+    right: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(13, 177, 166);
+}
+#hiscoreBox1{
+    position: absolute;
+    top: 70px;
+    right: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: yellowgreen;
+}
+#btn{
+    position: absolute;
+    top: 140px;
+    right: 160px;
+    color: red;
+    background-color: rgba(250, 18, 6, 0.107);
+    font-size: 25px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    border: 2px solid red;
+}
+#btn:hover{
+    box-shadow: 3px 3px 7px red;
+    transform: scale(1.02);
+}
+#board{
+    background: linear-gradient( rgb(18, 14, 37), rgb(5, 5, 5));
+    width: 90vmin;
+    height: 92vmin;
+    border: 3px solid rgb(128, 43, 0);
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background: linear-gradient( rgb(247, 82, 6), rgb(252, 1, 5));
+    border: 2px solid rgb(8, 1, 18);
+    border-radius: 40%;
+    box-shadow: 3px 5px 18px rgb(254, 103, 61);
+    transform: scale(1.2);
+}
+.snake{
+    background: linear-gradient(blue,rgb(47, 19, 73),rgba(40, 83, 254, 0.99));
+    border: .25vmin solid rgb(23, 1, 1);
+    border-radius: 98%;
+    box-shadow: 3px 2px 7px rgb(99, 180, 234) ;
+
+}
+.food{
+    background: linear-gradient(greenyellow,rgb(13, 255, 0));
+    border: 2px solid rgb(248, 250, 248);
+    border-radius: 100%;
+    box-shadow: 3px 2px 8px rgb(174, 236, 81) ;
+}
+footer{
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(26, 3, 130, 0.418);
+    color: rgb(9, 177, 249);
+    width: 100vw;
+    font-size: 25px;
+    text-align: center;
+    font-family: cursive;
+}
